@@ -23,4 +23,14 @@ public class Container
         
         if(this.CargoMass + this.ContainerWeight > this.MaxPayload) throw new Exception($"The cargo is way too heavy for this container");
     }
+
+    public void loadCargo()
+    {
+        
+    }
+
+    public void emptyCargo()
+    {
+        
+    }
 }
