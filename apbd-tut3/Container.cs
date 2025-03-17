@@ -18,7 +18,7 @@ public class Container
         this.Type = Type;
         this.Height = Height;
         this.Depth = Depth;
-        SerialNumber = "KON-" + Type + "-" + Random.Next(1, 9999);
+        SerialNumber = "KON-" + Type.ToString()[0] + "-" + Random.Next(1, 9999);
         this.MaxPayload = MaxPayload;
         
         if(this.CargoMass + this.ContainerWeight > this.MaxPayload) throw new Exception($"The cargo is way too heavy for this container");
