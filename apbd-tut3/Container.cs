@@ -2,6 +2,7 @@
 
 public class Container
 {
+    Random random = new Random();
     public ContainerType type { get; set; }
     public int cargo_mass { get; set; } //Mass of the cargo (what's inside of container)
     public int container_weight { get; set; } //Mass of the container itself
@@ -17,7 +18,9 @@ public class Container
         this.type = type;
         this.height = height;
         this.depth = container_weight;
-        this.serial_number = "KON-" + type;
+        this.serial_number = "KON-" + type + "-" + random.Next(1, 9999);
         this.max_payload = max_payload;
+        
+        if(this.cargo_mass > this.container_weight) throw new Exception($"The cargo is way too heavy for this container");
     }
 }
