@@ -22,8 +22,8 @@ public class RefrigeratorContainer : Container
     public RefrigeratorContainer(double containerWeight, double height, double depth, double maxPayload, string product, double temperature) : base(containerWeight, height, depth, maxPayload)
     {
         Type = ContainerType.Refrigerator;
-        this.Product = product;
-        this.Temperature = temperature;
+        Product = product;
+        Temperature = temperature;
         
         if (!Products.ContainsKey(Product))
         {

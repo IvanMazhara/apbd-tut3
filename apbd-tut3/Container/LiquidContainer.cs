@@ -7,7 +7,7 @@ public class LiquidContainer : Container, IHazardNotifier
     public LiquidContainer(double containerWeight, double height, double depth, double maxPayload, bool isHazard) : base(containerWeight, height, depth, maxPayload)
     {
         Type = ContainerType.Liquid;
-        this.IsHazard = isHazard;
+        IsHazard = isHazard;
     }
 
     public override void LoadCargo(double cargoMass)

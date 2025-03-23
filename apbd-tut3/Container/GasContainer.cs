@@ -7,7 +7,7 @@ public class GasContainer : Container, IHazardNotifier
     public GasContainer(double containerWeight, double height, double depth, double maxPayload, bool isHazard) : base(containerWeight, height, depth, maxPayload)
     {
         Type = ContainerType.Gas;
-        this.IsHazard = isHazard;
+        IsHazard = isHazard;
     }
 
     public override void LoadCargo(double cargoMass)
