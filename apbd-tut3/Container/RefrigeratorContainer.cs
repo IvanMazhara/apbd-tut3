@@ -2,7 +2,6 @@
 
 public class RefrigeratorContainer : Container
 {
-    Random Random = new Random();
     public ContainerType Type { get; set; }
     public string Product { get; set; }
     public double Temperature { get; set; }
@@ -20,20 +19,19 @@ public class RefrigeratorContainer : Container
         ["Eggs"] = 19.0
     };
 
-    public RefrigeratorContainer(double ContainerWeight, double Height, double Depth, double MaxPayload, string Product, double Temperature) : base(ContainerWeight, Height, Depth, MaxPayload)
+    public RefrigeratorContainer(double containerWeight, double height, double depth, double maxPayload, string product, double temperature) : base(containerWeight, height, depth, maxPayload)
     {
         Type = ContainerType.Refrigerator;
-        SerialNumber = "KON-" + Type.ToString()[0] + "-" + Random.Next(1, 9999);
-        this.Product = Product;
-        this.Temperature = Temperature;
+        this.Product = product;
+        this.Temperature = temperature;
         
         if (!Products.ContainsKey(Product))
         {
             throw new ArgumentException("Invalid product type.");
         }
-        if (Temperature > Products[Product])
+        if (temperature > Products[product])
         {
-            throw new ArgumentException($"Temperature too high for {Product}. Required: {Products[Product]}°C");
+            throw new ArgumentException($"Temperature too high for {product}. Required: {Products[product]}°C");
         }
     }
 }    

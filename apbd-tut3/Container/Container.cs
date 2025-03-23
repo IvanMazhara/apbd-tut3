@@ -11,12 +11,12 @@ public abstract class Container
     public string SerialNumber { get; set; }
     public double MaxPayload { get; set; }
 
-    public Container(double ContainerWeight, double Height, double Depth, double MaxPayload)
+    public Container(double containerWeight, double height, double depth, double maxPayload)
     {
-        this.ContainerWeight = ContainerWeight;
-        this.Height = Height;
-        this.Depth = Depth;
-        this.MaxPayload = MaxPayload;
+        this.ContainerWeight = containerWeight;
+        this.Height = height;
+        this.Depth = depth;
+        this.MaxPayload = maxPayload;
         SerialNumber = GenerateSerialNumber(this);
     }
 

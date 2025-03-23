@@ -2,14 +2,12 @@
 
 public class LiquidContainer : Container, IHazardNotifier
 {
-    Random Random = new Random();
     public ContainerType Type { get; set; }
     public bool IsHazard { get; set; }
-    public LiquidContainer(double ContainerWeight, double Height, double Depth, double MaxPayload, bool IsHazard) : base(ContainerWeight, Height, Depth, MaxPayload)
+    public LiquidContainer(double containerWeight, double height, double depth, double maxPayload, bool isHazard) : base(containerWeight, height, depth, maxPayload)
     {
         Type = ContainerType.Liquid;
-        SerialNumber = "KON-" + Type.ToString()[0] + "-" + Random.Next(1, 9999);
-        this.IsHazard = IsHazard;
+        this.IsHazard = isHazard;
     }
 
     public override void LoadCargo(double cargoMass)

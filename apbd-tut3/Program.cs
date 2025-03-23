@@ -7,6 +7,8 @@ internal class Program
     public static void Main(string[] args)
     {
         RefrigeratorContainer container = new RefrigeratorContainer(450, 200.0, 50.0, 500, "Bananas", 10.1);
+        LiquidContainer liquidContainer = new LiquidContainer(120, 200.0, 50.0, 500, true);
         Console.WriteLine(container.SerialNumber);
+        Console.WriteLine(liquidContainer.SerialNumber);
     }
 }
