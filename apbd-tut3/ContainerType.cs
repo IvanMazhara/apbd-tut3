@@ -2,5 +2,5 @@
 
 public enum ContainerType
 {
-    Refrigerator = 1, Liquid = 2, Gas = 3
+    Refrigerator = 'R', Liquid = 'L', Gas = 'G'
 }

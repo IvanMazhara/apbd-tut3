@@ -19,7 +19,7 @@ public abstract class Container
 
     public virtual void LoadCargo(double cargoMass)
     {
-        if(CargoMass + ContainerWeight > MaxPayload) throw new OverfillException($"The cargo is way too heavy for container {SerialNumber}");
+        if(CargoMass > MaxPayload) throw new OverfillException($"The cargo is way too heavy for container {SerialNumber}");
 
         CargoMass += cargoMass;
         Console.WriteLine($"Container {SerialNumber} was loaded with {cargoMass} kilograms cargo.");
