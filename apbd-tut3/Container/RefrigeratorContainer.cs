@@ -1,6 +1,4 @@
-﻿using System.Transactions;
-
-namespace apbd_tut3;
+﻿namespace apbd_tut3;
 
 public class RefrigeratorContainer : Container
 {
@@ -11,16 +9,5 @@ public class RefrigeratorContainer : Container
     {
         Type = ContainerType.Refrigerator;
         SerialNumber = "KON-" + Type.ToString()[0] + "-" + Random.Next(1, 9999);
-        if (this.CargoMass + this.ContainerWeight > this.MaxPayload)
-            throw new Exception($"The cargo is way too heavy for this container");
-    }
-
-    public void loadCargo()
-    {
-    }
-
-    public void emptyCargo()
-    {
-
     }
 }    

@@ -18,7 +18,7 @@ public class Container
         this.Depth = Depth;
         this.MaxPayload = MaxPayload;
         
-        if(this.CargoMass + this.ContainerWeight > this.MaxPayload) throw new Exception($"The cargo is way too heavy for this container");
+        if(this.CargoMass + this.ContainerWeight > this.MaxPayload) throw new OverfillException($"The cargo is way too heavy for this container");
     }
 
     public void loadCargo()
