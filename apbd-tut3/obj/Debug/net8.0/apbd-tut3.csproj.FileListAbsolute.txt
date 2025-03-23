@@ -1,0 +1,15 @@
+C:\Users\Vanya\RiderProjects\apbd-tut3\apbd-tut3\bin\Debug\net8.0\apbd-tut3.exe
+C:\Users\Vanya\RiderProjects\apbd-tut3\apbd-tut3\bin\Debug\net8.0\apbd-tut3.deps.json
+C:\Users\Vanya\RiderProjects\apbd-tut3\apbd-tut3\bin\Debug\net8.0\apbd-tut3.runtimeconfig.json
+C:\Users\Vanya\RiderProjects\apbd-tut3\apbd-tut3\bin\Debug\net8.0\apbd-tut3.dll
+C:\Users\Vanya\RiderProjects\apbd-tut3\apbd-tut3\bin\Debug\net8.0\apbd-tut3.pdb
+C:\Users\Vanya\RiderProjects\apbd-tut3\apbd-tut3\obj\Debug\net8.0\apbd-tut3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vanya\RiderProjects\apbd-tut3\apbd-tut3\obj\Debug\net8.0\apbd-tut3.AssemblyInfoInputs.cache
+C:\Users\Vanya\RiderProjects\apbd-tut3\apbd-tut3\obj\Debug\net8.0\apbd-tut3.AssemblyInfo.cs
+C:\Users\Vanya\RiderProjects\apbd-tut3\apbd-tut3\obj\Debug\net8.0\apbd-tut3.csproj.CoreCompileInputs.cache
+C:\Users\Vanya\RiderProjects\apbd-tut3\apbd-tut3\obj\Debug\net8.0\apbd-tut3.sourcelink.json
+C:\Users\Vanya\RiderProjects\apbd-tut3\apbd-tut3\obj\Debug\net8.0\apbd-tut3.dll
+C:\Users\Vanya\RiderProjects\apbd-tut3\apbd-tut3\obj\Debug\net8.0\refint\apbd-tut3.dll
+C:\Users\Vanya\RiderProjects\apbd-tut3\apbd-tut3\obj\Debug\net8.0\apbd-tut3.pdb
+C:\Users\Vanya\RiderProjects\apbd-tut3\apbd-tut3\obj\Debug\net8.0\apbd-tut3.genruntimeconfig.cache
+C:\Users\Vanya\RiderProjects\apbd-tut3\apbd-tut3\obj\Debug\net8.0\ref\apbd-tut3.dll
