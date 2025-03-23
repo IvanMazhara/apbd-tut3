@@ -2,6 +2,8 @@
 
 public abstract class Container
 {
+    public static Random Random = new Random();
+    public static Dictionary<string, Container> Containers = new Dictionary<string, Container>();
     public double CargoMass { get; set; } = 0; //Mass of the cargo (what's inside of container)
     public double ContainerWeight { get; set; } //Mass of the container itself
     public double Height { get; set; }
@@ -15,8 +17,22 @@ public abstract class Container
         this.Height = Height;
         this.Depth = Depth;
         this.MaxPayload = MaxPayload;
+        SerialNumber = GenerateSerialNumber(this);
     }
 
+    private string GenerateSerialNumber(Container container)
+    {
+        string serialNumber;
+        do
+        {
+            int uniqueNumber = Random.Next(1, 9999);
+            serialNumber = $"KON-{GetType().Name[0]}-{uniqueNumber}";
+        } while (Containers.ContainsKey(serialNumber));
+
+        Containers[serialNumber] = container;
+        return serialNumber;
+    }
+    
     public virtual void LoadCargo(double cargoMass)
     {
         if(CargoMass > MaxPayload) throw new OverfillException($"The cargo is way too heavy for container {SerialNumber}");
