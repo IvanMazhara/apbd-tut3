@@ -4,8 +4,8 @@ public abstract class Container
 {
     public static Random Random = new Random();
     public static Dictionary<string, Container> Containers = new Dictionary<string, Container>();
-    public double CargoMass { get; set; } = 0; //Mass of the cargo (what's inside of container)
-    public double ContainerWeight { get; set; } //Mass of the container itself
+    public double CargoMass { get; set; } = 0;
+    public double ContainerWeight { get; set; }
     public double Height { get; set; }
     public double Depth { get; set; }
     public string SerialNumber { get; set; }
@@ -13,10 +13,10 @@ public abstract class Container
 
     public Container(double containerWeight, double height, double depth, double maxPayload)
     {
-        this.ContainerWeight = containerWeight;
-        this.Height = height;
-        this.Depth = depth;
-        this.MaxPayload = maxPayload;
+        ContainerWeight = containerWeight;
+        Height = height;
+        Depth = depth;
+        MaxPayload = maxPayload;
         SerialNumber = GenerateSerialNumber(this);
     }
 
@@ -45,5 +45,15 @@ public abstract class Container
     {
         CargoMass = 0;
         Console.WriteLine($"Container {SerialNumber} is now empty.");
+    }
+    
+    public override string ToString()
+    {
+        return $"--Container information about {SerialNumber}--\n" +
+               $"Weight: {ContainerWeight}\n" +
+               $"Height: {Height}\n" +
+               $"Depth: {Depth}\n" +
+               $"Cargo mass: {CargoMass} \n" +
+               $"Maximum payload: {MaxPayload}\n";
     }
 }
