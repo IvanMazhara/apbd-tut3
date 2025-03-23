@@ -1,33 +1,33 @@
 ﻿namespace apbd_tut3;
 
-public class Container
+public abstract class Container
 {
-    Random Random = new Random();
-    public int CargoMass { get; set; } //Mass of the cargo (what's inside of container)
-    public int ContainerWeight { get; set; } //Mass of the container itself
+    public double CargoMass { get; set; } = 0; //Mass of the cargo (what's inside of container)
+    public double ContainerWeight { get; set; } //Mass of the container itself
     public double Height { get; set; }
     public double Depth { get; set; }
     public string SerialNumber { get; set; }
-    public int MaxPayload { get; set; }
+    public double MaxPayload { get; set; }
 
-    public Container(int CargoMass, int ContainerWeight, double Height, double Depth, int MaxPayload)
+    public Container(double ContainerWeight, double Height, double Depth, double MaxPayload)
     {
-        this.CargoMass = CargoMass;
         this.ContainerWeight = ContainerWeight;
         this.Height = Height;
         this.Depth = Depth;
         this.MaxPayload = MaxPayload;
-        
-        if(this.CargoMass + this.ContainerWeight > this.MaxPayload) throw new OverfillException($"The cargo is way too heavy for this container");
     }
 
-    public void loadCargo()
+    public virtual void LoadCargo(double cargoMass)
     {
-        
+        if(CargoMass + ContainerWeight > MaxPayload) throw new OverfillException($"The cargo is way too heavy for container {SerialNumber}");
+
+        CargoMass += cargoMass;
+        Console.WriteLine($"Container {SerialNumber} was loaded with {cargoMass} kilograms cargo.");
     }
 
-    public void emptyCargo()
+    public virtual void EmptyCargo()
     {
-        
+        CargoMass = 0;
+        Console.WriteLine($"Container {SerialNumber} is now empty.");
     }
 }
