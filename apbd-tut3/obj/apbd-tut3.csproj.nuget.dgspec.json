@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\apbd-tut3\\apbd-tut3\\apbd-tut3.csproj": {}
+    "C:\\Users\\Vanya\\RiderProjects\\apbd-tut3\\apbd-tut3\\apbd-tut3.csproj": {}
   },
   "projects": {
-    "Z:\\apbd-tut3\\apbd-tut3\\apbd-tut3.csproj": {
+    "C:\\Users\\Vanya\\RiderProjects\\apbd-tut3\\apbd-tut3\\apbd-tut3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\apbd-tut3\\apbd-tut3\\apbd-tut3.csproj",
+        "projectUniqueName": "C:\\Users\\Vanya\\RiderProjects\\apbd-tut3\\apbd-tut3\\apbd-tut3.csproj",
         "projectName": "apbd-tut3",
-        "projectPath": "Z:\\apbd-tut3\\apbd-tut3\\apbd-tut3.csproj",
-        "packagesPath": "C:\\Users\\s31385\\.nuget\\packages\\",
-        "outputPath": "Z:\\apbd-tut3\\apbd-tut3\\obj\\",
+        "projectPath": "C:\\Users\\Vanya\\RiderProjects\\apbd-tut3\\apbd-tut3\\apbd-tut3.csproj",
+        "packagesPath": "C:\\Users\\Vanya\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Vanya\\RiderProjects\\apbd-tut3\\apbd-tut3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\s31385\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Vanya\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\Vanya\\.dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
